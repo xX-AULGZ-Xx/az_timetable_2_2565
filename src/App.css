@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mitr", sans-serif;
+  scroll-behavior: smooth;
+}
+
+section {
+  background: #d3d3d3;
+  width: 80vw;
+  height: 80vh;
+  border-radius: 10px;
+  border: 5px solid rgba(46, 46, 46, 0.952);
+  overflow: auto;
+}
+
+h2 {
+  padding: 15px 0px 15px 0px;
+  display: flex;
+  justify-content: center;
+  color: rgb(31, 31, 31);
+}
+
+hr {
+  border-radius: 10px;
+  height: 5px;
+  background: #333;
+}
+
+table {
+  margin-top: 15px;
+  height: 60vh;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.App {
+  font-size: 1.2rem;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 2000% 400%;
+  animation: gradient 30s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 80% 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  section {
+    width: 95vw;
+    height: 95vh;
+    border-radius: 10px;
+    border: 5px solid rgba(46, 46, 46, 0.952);
+    overflow: scroll;
+  }
+
+  table {
+    font-size: 1rem;
+    height: max-content;
+  }
+}
